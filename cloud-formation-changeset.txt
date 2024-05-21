@@ -1,0 +1,41 @@
+CloudFormation stack changeset
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Operation                                            LogicalResourceId                                    ResourceType                                         Replacement
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
++ Add                                                ApiGatewayDeployment822115bdde                       AWS::ApiGateway::Deployment                          N/A
++ Add                                                EventConfiguration                                   AWS::Lambda::EventInvokeConfig                       N/A
++ Add                                                ReportFunctionApiPermissionStage                     AWS::Lambda::Permission                              N/A
++ Add                                                ReportFunctionRole                                   AWS::IAM::Role                                       N/A
++ Add                                                ReportFunction                                       AWS::Lambda::Function                                N/A
++ Add                                                SeedCronFunctionRole                                 AWS::IAM::Role                                       N/A
++ Add                                                SeedCronFunction                                     AWS::Lambda::Function                                N/A
++ Add                                                ThreatCronFunctionNoonPermission                     AWS::Lambda::Permission                              N/A
++ Add                                                ThreatCronFunctionNoon                               AWS::Events::Rule                                    N/A
++ Add                                                ThreatCronFunctionRole                               AWS::IAM::Role                                       N/A
++ Add                                                ThreatCronFunction                                   AWS::Lambda::Function                                N/A
++ Add                                                UserCronFunctionOvernightPermission                  AWS::Lambda::Permission                              N/A
++ Add                                                UserCronFunctionOvernight                            AWS::Events::Rule                                    N/A
++ Add                                                UserCronFunctionRole                                 AWS::IAM::Role                                       N/A
++ Add                                                UserCronFunction                                     AWS::Lambda::Function                                N/A
+* Modify                                             AccountFunction                                      AWS::Lambda::Function                                False
+* Modify                                             ApiGatewayStage                                      AWS::ApiGateway::Stage                               False
+* Modify                                             ApiGateway                                           AWS::ApiGateway::RestApi                             False
+* Modify                                             AssetFunction                                        AWS::Lambda::Function                                False
+* Modify                                             ChariotTable                                         AWS::DynamoDB::Table                                 False
+* Modify                                             FileFunction                                         AWS::Lambda::Function                                False
+* Modify                                             HookFunction                                         AWS::Lambda::Function                                False
+* Modify                                             JobFunction                                          AWS::Lambda::Function                                False
+* Modify                                             MyFunction                                           AWS::Lambda::Function                                False
+* Modify                                             RiskFunction                                         AWS::Lambda::Function                                False
+* Modify                                             SeedFunction                                         AWS::Lambda::Function                                False
+- Delete                                             ApiGatewayDeploymente2b538b2eb                       AWS::ApiGateway::Deployment                          N/A
+- Delete                                             CronFunctionAMPermission                             AWS::Lambda::Permission                              N/A
+- Delete                                             CronFunctionAM                                       AWS::Events::Rule                                    N/A
+- Delete                                             CronFunctionNoonPermission                           AWS::Lambda::Permission                              N/A
+- Delete                                             CronFunctionNoon                                     AWS::Events::Rule                                    N/A
+- Delete                                             CronFunctionRole                                     AWS::IAM::Role                                       N/A
+- Delete                                             CronFunction                                         AWS::Lambda::Function                                N/A
+- Delete                                             VersionFunctionGetPermissionStage                    AWS::Lambda::Permission                              N/A
+- Delete                                             VersionFunctionRole                                  AWS::IAM::Role                                       N/A
+- Delete                                             VersionFunction                                      AWS::Lambda::Function                                N/A
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
